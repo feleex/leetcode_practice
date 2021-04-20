@@ -32,10 +32,18 @@ public class Lee022 {
 //        }
 
         if (left>0){
+//            str+="(";
+//            left--;
+//            backtrack(str,left,right,res);
+//          这种没问题
             backtrack(str+"(",left-1,right,res);
 
         }
         if (right>0){
+//            str+=")";
+//            right--;
+//            backtrack(str,left,right,res);
+//          这种没问题
             backtrack(str+")",left,right-1,res);
         }
     }
