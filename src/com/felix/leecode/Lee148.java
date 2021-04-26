@@ -55,4 +55,14 @@ public class Lee148 {
       ListNode() {}
       ListNode(int val) { this.val = val; }
       ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+      @Override
+     public String toString(){
+          ListNode tmp=this;
+          StringBuffer sb=new StringBuffer();
+          do {
+              sb.append(tmp.val);
+              tmp=tmp.next;
+          }while (tmp!=null);
+          return sb.toString();
+      }
   }
